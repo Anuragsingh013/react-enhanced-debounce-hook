@@ -1,0 +1,20 @@
+{
+  "name": "react-enhanced-debounce-hook",
+  "version": "1.0.6",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "debounce",
+    "useDebounce"
+  ],
+  "author": "Anurag Singh",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  }
+}
