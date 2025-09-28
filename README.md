@@ -18,6 +18,9 @@ npm install react-enhanced-debounce-hook
 yarn add react-enhanced-debounce-hook
 ```
 
+simple usage example in CodeSandbox:
+ https://codesandbox.io/p/sandbox/8vxv8j?file=%2Fsrc%2FApp.tsx%3A14%2C28
+
 ---
 
 ## Usage
