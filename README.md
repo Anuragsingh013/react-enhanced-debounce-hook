@@ -58,28 +58,41 @@ function SearchBox() {
 ### `useDebounce(value, delay?, options?)`
 
 ```jsx
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useDebounce } from "react-enhanced-debounce-hook";
 
-function SearchBox() {
-  const [text, setText] = useState("");
-  const [debouncedText] = useDebounce(text, 500);
-
-  useEffect(() => {
-    if (debouncedText) {
-      console.log("API Call with:", debouncedText);
-    }
-  }, [debouncedText]);
+export default function DemoUseDebounce() {
+  const [text, setText] = useState("Hello");
+  // const [debouncedText, controls] = useDebounce(text, 1000);
+  const [debouncedText] = useDebounce(text, 1000);
 
   return (
-    <input
-      type="text"
-      value={text}
-      onChange={(e) => setText(e.target.value)}
-      placeholder="Search..."
-    />
+    <div style={{ padding: 20, fontFamily: "Arial" }}>
+      <h3>useDebounce demo</h3>
+      <input
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        style={{ padding: 8, width: 320 }}
+      />
+      <div style={{ marginTop: 8 }}>
+        <div>
+          Actual value: <b>{text}</b>
+        </div>
+        <div>
+          Debounced value: <b>{debouncedText}</b>
+        </div>
+      </div>
+
+      {/* <div style={{ marginTop: 8 }}>
+        <button onClick={() => controls.flush()}>Flush (apply now)</button>
+        <button onClick={() => controls.cancel()} style={{ marginLeft: 8 }}>
+          Cancel pending
+        </button>
+      </div> */}
+    </div>
   );
 }
+
 ```
 
 ---
