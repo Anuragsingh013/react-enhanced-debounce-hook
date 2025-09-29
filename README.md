@@ -19,7 +19,7 @@ yarn add react-enhanced-debounce-hook
 ```
 
 simple usage example in CodeSandbox:
- https://codesandbox.io/p/sandbox/8vxv8j?file=%2Fsrc%2FApp.tsx%3A14%2C28
+https://codesandbox.io/p/sandbox/8vxv8j
 
 ---
 
